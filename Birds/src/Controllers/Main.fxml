@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="openMenu" mnemonicParsing="false" onAction="#open" text="Open" />
+                  <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="blackWhiteMenu" mnemonicParsing="false" onAction="#blackWhiteWindow" text="Black &amp; White" />
+                  <MenuItem fx:id="blackWhiteMenu1" mnemonicParsing="false" onAction="#luminanceWindow" text="Luminance Settings" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fx:id="colourImage" fitHeight="650.0" fitWidth="1100.0" pickOnBounds="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
